@@ -489,7 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1906,6 +1906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartGameScreen: {fileID: 19659251}
   MainGameScreen: {fileID: 670748761}
+  startButton: {fileID: 2078068053}
 --- !u!4 &1857095269
 Transform:
   m_ObjectHideFlags: 0
@@ -2067,7 +2068,6 @@ GameObject:
   - component: {fileID: 2078068055}
   - component: {fileID: 2078068054}
   - component: {fileID: 2078068053}
-  - component: {fileID: 2078068056}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -2138,19 +2138,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2078068054}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2078068056}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartGameButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2078068054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2189,18 +2177,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078068051}
   m_CullTransparentMesh: 1
---- !u!114 &2078068056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078068051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d22788c003df74cb7cb5b8e3ab218b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2081893857
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,9 +2449,9 @@ AudioSource:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 500531740}
   - {fileID: 519420032}
   - {fileID: 494860330}
   - {fileID: 670748762}
   - {fileID: 19659252}
-  - {fileID: 500531740}
   - {fileID: 168943639}
